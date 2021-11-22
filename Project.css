@@ -1,0 +1,843 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    word-spacing:3px;
+} 
+#container{
+    width:100%;
+    margin:0 auto;
+    display: grid;
+    position: relative;
+ 
+    grid-template-columns: repeat(8,1fr);
+    background-image: url(image/space2.png)
+}
+
+
+
+.image-scroll{
+  
+    
+    background-image: url(image/blackhole.JPG);
+    min-height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#masthead{
+    display:flex;
+    justify-content: space-between;
+    background-color: rgba(0,0,0,0.2);
+    font-family: 'Cairo', sans-serif;/* overall paragraph font*/
+    color:#fff;
+    grid-column: 1/9;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+}
+    nav{
+        margin-top: 0.8rem;
+        
+}
+    #masthead h1 a{
+        font-family: 'Josefin Sans', sans-serif;
+    }
+footer{
+    font-family: 'Cairo', sans-serif;
+}
+    nav a:hover{
+        border: 1px solid cyan;
+        border-radius: 15px; 
+        opacity:1;
+        transition: all 0.3s ease-in;
+        text-align: center;
+        color: #000;
+        background-color: #fff;
+
+    }
+    #masthead h1{
+       padding-left: 0.5rem;
+    }
+#masthead h1 a{
+    color: #fff;
+    text-decoration: none;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+nav a{
+    text-decoration: none;
+    padding:1rem;
+    color: #fff;
+
+}
+
+main{
+    grid-column: 2/8;
+    background-color:#252a30;/*new*/
+    color: #fff;
+    font-family: 'Source Sans Pro', sans-serif; 
+    
+}
+ .intro h1{
+     font-family: 'Noto Sans JP', sans-serif; 
+ }
+ .intro h2{
+    font-family: 'Noto Sans JP', sans-serif;
+ }
+ article header{/*putting font in every page(almost)*/
+    font-family: 'Noto Sans JP', sans-serif;
+    
+ }
+ /*3rd page headers font*/
+ .trdpagehead h1{
+    font-family: 'Noto Sans JP', sans-serif;
+ }
+ /*4th page headers font*/
+ .fthpagehead h1{
+     border-bottom: 3px solid rgb(110, 55, 55);
+    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
+ }
+ .fthpagehead p{
+    text-align: center;
+ }
+ /*5th page header font*/
+ #main5 .articlebody h2{
+    font-family: 'Noto Sans JP', sans-serif;
+ }
+ /*home page paragraph font*/
+ .overall p{
+    font-family: 'Slabo 27px', serif;
+ }
+ /*home page header 1 font*/
+ .overall h1{
+    font-family: 'Monda', sans-serif;
+ }
+  /*home page header 2 font*/
+  .overall h2{
+    font-family: 'Monda', sans-serif;
+}
+/*page 3 or future website grid for aside and article*/
+
+
+#asidefuture{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 1rem;
+}
+
+.asidelist_1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.asidelist_2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.asidelist_3{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+/*page 3 aside transition*/
+.news a{
+    margin: auto;
+    border: 3px solid transparent;
+    display: inline-block; 
+    border-radius: 15px; 
+    opacity:1;
+    transition: all 0.3s ease-in;
+    text-align: center;
+    color: #fff;
+    
+  }
+  .news a:hover {
+      border-color:#fff;
+     
+    opacity:0.5; 
+  }
+  .news img{
+      border-radius:6px;
+  } 
+  .paddingfuture{
+      margin-left: 6rem;
+  }
+  #headerfuture h2{
+        font-size: 30px;
+        border-bottom: 3px solid rgb(110, 55, 55);
+        text-align: center;
+  }
+
+ /*about me page*/
+ #bio h2{
+    font-family: 'Noto Sans JP', sans-serif; 
+ }
+ #bio h3{
+    font-family: 'Noto Sans JP', sans-serif;
+ }
+
+ #img1{
+    grid-column: 1/9;
+    
+    width:100%;
+} 
+/*page 4 or controvercy website grid for aside and article*/
+#mainimp{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    grid-gap:1rem;
+}
+#forgrid2{
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+#asidecon{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+#img2{
+    float: left;
+    padding-right: 0.5rem;
+    
+}
+ .image{
+    float:left;
+    padding:0.5rem;
+    max-width: 300%;
+    
+    }
+.image2nd{
+    float: right;
+   padding: 0.5rem;
+    max-width: 300%;
+}
+.image3rd{
+    float:left;
+    padding: 0.5rem;
+    max-width: 300%;
+}
+.image4th{
+    float:right;
+    padding: 0.5rem;
+    max-width: 300%;
+} 
+/*putting grid in right place*/
+#asidecon{
+    padding-left: 4rem;
+    padding-top:5rem;
+}
+.info{
+    border: 3px solid #000;
+}
+/*page 4 aside transition*/
+.info a{
+    margin: auto;
+    border: 3px solid transparent;
+    display: inline-block; 
+    border-radius: 15px; 
+    opacity:1;
+    transition: all 0.3s ease-in;
+    text-align: center;
+    color: #fff;
+    
+  }
+  .info a:hover {
+      border-color:#fff;
+     
+    opacity:0.5; 
+  }
+  .info img{
+      border-radius:6px;
+  } 
+  .info p{
+      text-align: left;
+  }
+
+.start{
+    
+        text-align: center;
+    }
+article{
+    padding: 0.5rem;
+}
+    /*page 1 ends*/
+    #main2{
+        margin-top: 4rem;
+        grid-column: 2/8;
+    }
+    #aside1{
+
+        
+        color:#fff;         /*2nd page*/  
+    }
+    
+    #aside1 aside{
+        
+        text-align: center;
+        padding:0.5rem;
+        
+        
+    }
+    /*image that links to the context of 2nd page*/
+    * {
+        box-sizing: border-box;
+      }
+      .firstparagraph{ /*giving first paragraph and 2nd paragraph padding*/
+          padding:0.5em;
+      }
+      .header2ndpage h1{
+        text-align: center;
+        font-size: 40px;
+        border-bottom: 3px solid rgb(110, 55, 55);
+      }
+      .header2ndpage h3{
+        text-align: center; 
+      }
+
+#grid h1{
+    padding: 1rem;
+}
+
+      .row{
+          display: grid;
+          grid-template-columns: repeat(4,1fr);
+          grid-template-rows: 1fr 1fr;
+          grid-gap: 1rem;
+          padding: 3rem;
+          
+      }
+
+      .column1{
+          grid-column: 1/2;
+          grid-row: 1/2;
+      }
+
+      .column2{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .column3{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .column4{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+      
+     .trans a{ /*this is for the images which is after greatest Achievements heading in second page*/
+        margin: auto;
+        border: 3px solid transparent;
+        display: inline-block; 
+        border-radius: 15px; 
+        opacity:1;
+        transition: all 0.3s ease-in;
+        text-align: center;
+        color: #fff;
+        
+      }
+      .trans a:hover {
+          border-color:#fff;
+         
+        opacity:0.5; 
+      }
+      .trans img{
+          border-radius:6px;
+      }  
+      /*third page starts*/
+
+    main .trdpagehead{
+        text-align: center;
+        padding-bottom: 10px;
+        padding:0.5rem;
+
+    }
+    /*page 3 starts*/
+    #main3{
+        grid-column: 2/8;
+    }
+    #main4{
+        grid-column: 2/8;
+    }
+         /*fourth page starts*/
+          main #img4{
+              grid-column: 2/8;
+              width:120%;  
+          }
+          .fthpagehead{
+            padding: 0.5rem;
+          }
+          
+       /*fifth page books*/
+    .bookrow{
+        padding-left:2rem ;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr); 
+        grid-gap: 1rem;
+     }
+         .bookrow .column1{
+             grid-column: 1/2;
+             grid-row: 1/2;
+         }
+         .bookrow .column2{
+             grid-column: 2/3;
+             grid-row: 1/2;
+         }
+         .bookrow .column3{
+             grid-column: 3/4;
+             grid-row: 1/2;
+         }
+         .bookrow .column4{
+             grid-column: 1/2;
+             grid-row: 2/3;
+         }
+         .bookrow .column5{
+             grid-column: 2/3;
+             grid-row: 2/3;
+         }
+         .bookrow .column6{
+             grid-column: 3/4;
+             grid-row: 2/3;
+         }
+         .bookrow .column7{
+             grid-column: 1/2;
+             grid-row: 3/4;
+         }
+         .bookrow .column8{
+             grid-column: 2/3;
+             grid-row: 3/4;
+         } 
+         
+         #main5{
+             margin-top: 3rem;/*margin for the top content of page 5*/
+
+         }
+         footer{
+             grid-column: 1/9;
+             background-color: rgba(0,0,0,0.7);
+             color: #fff;
+             font-family: 'Cairo', sans-serif;   
+         }
+         footer .nav{
+             margin-top: -2rem;
+            text-align: center;
+            padding:1rem;
+         }
+        .nav ul{
+            list-style-type: none;  
+        }
+         footer a{
+             color: #fff;
+             text-decoration: none;
+             list-style-type: none;
+         }
+     footer .footerbrand{
+         text-align: center;
+         font-size: 25px;
+         
+     }
+     #main5 article h1{
+         text-align: center;
+         border-bottom: 3px solid rgb(110, 55, 55);
+         font-size: 35px;
+     }
+     #main5 article .firstsen p{
+         text-align: center;
+         font-size: 20px;
+     }
+
+     #main5{
+         margin-top: 4rem;
+     }
+/*page fifth*/
+     #main5 article img{
+         float: left;
+         padding: 0.5rem;
+     }
+     .intro{
+         text-align: center;
+         border-bottom: 3px solid rgb(110, 55, 55);
+     }
+/*initial home page initiated*/
+.overall{
+    width: 100%;
+    height: 600px;
+    padding: 40px 60px;
+    color: #fff;
+    font-family: sans-serif;
+    text-align: center;
+    }
+    .article-1{
+        height: 100vh;
+        background-image: url(image/initial1st.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        max-width: 100%;
+        
+    }
+    .article-2{
+		background: #252a30;
+    }
+    .article-3{
+		background-image: url(image/interstellar.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        max-width: 100%;
+    }
+    .article-4{
+		background: #252a30;
+		
+    }
+    .article-5{
+        height: 100vh;
+        background-image: url(image/infinityloop.gif);
+        background-attachment: fixed;
+        background-size: cover;
+        max-width: 100%;
+        
+    }
+    .article-6{
+		background: #252a30;
+    }
+    .overall p{
+        
+		font-size: 20px;
+		margin-top: 100px;
+    }
+    .overall h1{
+		font-size: 50px;
+		
+    }
+    .overall h2{
+        font-size: 40px;
+        border-bottom: 4px solid rgb(110, 55, 55);
+    }
+    .overall a{
+        color:#fff;
+        
+    }
+    .overall a:hover{
+        color:cyan;
+      
+    }
+    /*page about me*/
+    .forpadding{
+        padding:0.5rem;
+    }
+    .bio img{
+        grid-column: 1/9;
+        max-width: 100%;
+    }
+.fast{
+    padding:0.5rem;
+}
+.fast a{
+    color:#fff;
+    text-decoration: none;
+    list-style-type: none;
+
+}
+/*achievements*/
+.trans{
+    margin-left: 6rem;
+}
+
+
+
+
+
+    @media screen and (max-width:1520px){
+
+       main #main4{
+            width:83.3%;
+        }  
+    }
+
+      @media screen and (max-width:1100px){
+main{
+    grid-column: 1/9;
+}
+#main3{
+    grid-column: 1/9;
+
+}
+
+
+#main2{
+    grid-column: 1/9;
+}
+
+#img1{
+    margin-top: 3rem;
+    grid-column: 1/9;
+
+}
+#img4{
+    
+    grid-column: 1/9;
+
+}
+
+
+.image{
+    float: none;
+    width: 90%;
+}
+
+.image2nd{
+    float: none;
+width: 90%;
+}
+
+.image3rd{
+    width: 90%;
+    float: none;
+
+}
+
+
+
+      }
+      
+      @media screen and (max-width:840px){
+
+#masthead {
+ grid-column: 1/9;
+ position: initial;
+ display: unset;   
+}
+#alter{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap:1 rem
+
+}
+#mainimp{
+    grid-column:1/2 ;
+    grid-row:1/2 ;
+  
+}
+#asidecon{
+    grid-column:1/2 ;
+    grid-row:2/3 ;
+    margin-left: 7rem;
+}
+
+
+
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 3;
+}
+
+#masthead h1{
+    text-align: center;
+    padding-left: 2rem;
+}
+
+
+      }
+
+      @media screen and (max-width:1000px){
+
+     
+
+        .row{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4,1fr);
+        }
+
+        .column1{
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+
+        .column2{
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+
+        .column3{
+            grid-column: 1/2;
+            grid-row: 3/4;
+        }
+
+        .column4{
+            grid-column: 1/2;
+            grid-row: 4/5;
+        }
+
+        .image2ndpage{
+            width: 80%;
+        }
+      }
+      /*third page responsive*/
+      @media screen and (max-width:1400px){
+     #main3{
+         grid-column:2/8;
+     }
+     #main4{
+        grid-column:1/9;
+    }
+}
+     /*for fifth page*/
+     @media screen and (max-width:1400px){
+        .bookrow{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(4,1fr);
+        } 
+        .bookrow .column1{
+           grid-column: 1/2;
+           grid-row: 1/2;
+        }
+        .bookrow .column2{
+           grid-column: 2/3;
+           grid-row: 1/2;
+        }
+        .bookrow .column3{
+           grid-column: 1/2;
+           grid-row: 2/3;
+        }
+        .bookrow .column4{
+           grid-column: 2/3;
+           grid-row: 2/3;
+        }
+        .bookrow .column5{
+           grid-column: 1/2;
+           grid-row: 3/4;
+        }
+        .bookrow .column6{
+           grid-column: 2/3;
+           grid-row: 3/4;
+        }
+        .bookrow .column7{
+           grid-column: 1/2;
+           grid-row: 4/5;
+        }
+        .bookrow .column8{
+           grid-column: 2/3;
+           grid-row: 4/5;
+        }
+   
+       }
+   
+     @media screen and (max-width:818px){
+        .article-1{
+            height: 100vh;
+            background-image: url(image/initial2st.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+            max-width: 100%;
+            
+        }
+    }
+        @media screen and (max-width:700px){
+     .bookrow{
+         display: grid;
+         grid-template-columns: 1fr;
+         grid-template-rows: repeat(8,1fr);
+     } 
+     .bookrow .column1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+     }
+     .bookrow .column2{
+        grid-column: 1/2;
+        grid-row: 2/3;
+     }
+     .bookrow .column3{
+        grid-column: 1/2;
+        grid-row: 3/4;
+     }
+     .bookrow .column4{
+        grid-column: 1/2;
+        grid-row: 4/5;
+     }
+     .bookrow .column5{
+        grid-column: 1/2;
+        grid-row: 5/6;
+     }
+     .bookrow .column6{
+        grid-column: 1/2;
+        grid-row: 6/7;
+     }
+     .bookrow .column7{
+        grid-column: 1/2;
+        grid-row: 7/8;
+     }
+     .bookrow .column8{
+        grid-column: 1/2;
+        grid-row: 8/9;
+     }
+
+    }
+     /*page home page/initial page allignment when screen is 700px */
+     @media screen and (max-width:700px){
+        
+         #bio video{
+             width:90%
+
+         }
+         #bio .forpadding p{
+           margin-left: -6rem;
+         }
+        #asidefuture{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-gap: 1rem;
+        }
+
+        .asidelist_1{
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+        .asidelist_2{
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+        .asidelist_3{
+            grid-column: 1/2;
+            grid-row: 3/4;
+        }
+        #asidefuture .news p{
+            text-align: left;
+        }
+        .forpadding{
+            padding-left: 7rem;
+        }
+       .overall p{
+		font-size: 16px;
+		
+    }
+    .overall h1{
+		font-size: 35px;
+		
+    }
+    .overall h2{
+        font-size: 25px;
+    }
+    } 
+
+
+
+      
+
